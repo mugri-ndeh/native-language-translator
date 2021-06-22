@@ -1,0 +1,413 @@
+/*General Body*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+a{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+li{
+  cursor: pointer;
+}
+select{
+  outline: none;
+  border: none;
+  padding: 8px;
+  background-color: teal;
+  color: white;
+  border-radius: 2px;
+}
+select:focus{
+  outline: none;
+  border: none;
+}
+
+/*--------------------------------------------------------------------------------------------------
+
+ NAVBAR
+
+----------------------------------------------------------------------------------------------------*/
+.container{
+  justify-content: space-between;
+  align-items: center;
+  overflow:auto;
+  background-color: black;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  color: aliceblue;
+}
+#logo{
+  color:teal;
+}
+
+/*Navigation items*/
+
+.navitems{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+  vertical-align:top;
+}
+.navitems li{
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline-block; 
+  padding:10px;
+  font-size:20px; 
+  font-family:raleway;
+  border-radius: 5px;
+}
+.navitems li a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 5px;
+}
+.navitems li a:hover{
+  border-bottom: 2px teal solid;
+}
+
+.navitems li .active{
+  border-bottom: 2px teal solid;
+}
+
+/*--------------------------------------------------------------------------------------------------
+
+SEARCH SECTION 
+
+----------------------------------------------------------------------------------------------------*/
+.search-box{
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px ;
+  /* background-color: teal; */
+  height: 62vh;
+  align-items: center;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#welcome{
+  display: none;
+  /* background-color: teal; */
+  padding-left: 50px;
+}
+#search-side{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+#result-side{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.search-head{
+  background-color: black;
+  color: white;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 0px;
+}
+.seach-body{
+  padding: 0px 10px 0px 10px;
+  height: 100px;
+  width: 400px;
+  margin: 0px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+#search-button{
+  margin-top: 5px;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  padding: 8px;
+}
+
+.result-body{
+  padding: 0px 10px 0px 10px;
+  background-color: white;
+  height: 100px;
+  width: 400px;
+  margin: 0px;
+}
+
+/*text area*/
+input{
+  border:rgb(196, 196, 196) 2px solid;
+  outline-color: whitesmoke;
+  margin-top: 10px;
+  flex: 1;
+  padding: 10px;
+  width: 390px;
+  border-radius: 2px;
+}
+input:focus{
+  border: rgb(196, 196, 196);
+  outline-color: whitesmoke;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------
+
+COMMON TRANSLATIONS
+
+----------------------------------------------------------------------------------------------------*/
+.trans-section{
+  /* height: 80vh; */
+  display: block;
+}
+.trans-section h1{
+  text-align: center;
+}
+#translations-view{
+  display: flex;
+  justify-content: space-evenly;
+}
+.trans-section{
+  display: none;
+  padding: 20px;
+}
+.sel-cat{
+  margin-bottom: 5px;
+}
+
+#greeting-tbl{
+  display: none;
+}
+#response-tbl{
+  display: none;
+
+}
+#question-tbl{
+  display: none;
+
+}
+#common-tbl{
+  display: none;
+
+}
+#word-tbl{
+  display: none;
+
+}
+
+
+/*--------------------------------------------------------------------------------------------------
+
+REGISTER
+
+----------------------------------------------------------------------------------------------------*/
+#signup-home{
+  background-color: whitesmoke;
+}
+.signup-section{
+  display: flex;
+  justify-content: center;
+}
+.form{
+  margin-top: 100px;
+  background-color: white;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+}
+.form-control{
+  margin-bottom: 10px;
+}
+.btn{
+  color:white;
+  background-color: teal;
+  outline:none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  justify-self: center;
+}
+.form-control input{
+  width: 250px;
+  border-radius: 3px;
+  outline-color: teal;
+  padding: 10px;
+  border: none;
+  background-color: whitesmoke;
+}
+.form-control input:focus{
+  outline:none;
+}
+.re-router a{
+  text-decoration: none;
+  color: teal;
+}
+
+
+.login-section{
+  display: flex;
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------------------------------------------
+
+ADMIN SECTION
+
+----------------------------------------------------------------------------------------------------*/
+.table{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+table{
+  border-collapse: collapse;
+  width: 80%;
+  font-size: 25px;
+  text-align: left;
+}
+tr:nth-child(even) {background-color: white;}
+
+th{
+  background-color: teal;
+  color: black;
+}
+
+.form-admin{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  margin-top: 10px;
+}
+
+.form-admin .form-control-admin button{
+  padding: 7px;
+  margin: 0px;
+  width: 50px;
+
+}
+.form-admin .form-control-admin input{
+  width: 220px;
+  padding: 5px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid teal;
+}
+.form-admin .form-control-admin input:focus{
+  border: 1px solid cyan;
+}
+.admin-adder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px 15px 5px;
+  margin-bottom: 10px;
+}
+.form-control-admin{
+  margin-left: 10px;
+}
+
+#admin-adder{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+td a{
+  text-decoration: none;
+  color: tomato;
+  padding: 5px;
+}
+
+
+/*------------------------------------------------------------------------------------------------
+Admin login
+-------------------------------------------------------------------------------------------------*/
+
+.welcome-admin{
+  background-color: teal;
+  color: black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px 0px 30px;
+}
+.form-admin-login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  margin-top: 30px;
+
+}
+.a-f{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form-admin-login input{
+  width: 220px;
+  padding: 5px;
+  border-radius: 2px;
+  outline: none;
+  border: 1px solid teal;
+}
+.form-admin-login button{
+  color: white;
+  background-color: teal;
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 5px;
+  width: 80px;
+}
+
+footer{
+  background-color: black;
+  display: flex;
+  color: whitesmoke;
+  justify-content:center ;
+  width: 100%;
+  margin-top: 50px;
+  position: fixed;
+}
+.footer{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+.error{
+  color: blue;
+}
